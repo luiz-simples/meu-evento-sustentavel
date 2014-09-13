@@ -13,7 +13,7 @@
         <fieldset ng-repeat="(key, questao) in eixo.questoes">
           <legend style="color: blue;">{{questao.enunciado}}</legend>
           <label ng-repeat="opcao in questao.opcoes">
-            <input type="radio" name="{{key}}" ng-model="color" ng-value="opcao" ng-model="questao.resposta">
+            <input type="{{questao.tipo}}" name="{{key}}" ng-model="color" ng-value="opcao" ng-model="questao.resposta">
             {{opcao}}
           </label>
           <br/>

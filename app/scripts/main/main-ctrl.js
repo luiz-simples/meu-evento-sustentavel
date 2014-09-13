@@ -8,65 +8,33 @@ angular.module('meuEventoSustentavel').controller('MainCtrl', function ($scope) 
         {
           enunciado: "Primeira Pergunta",
           resposta: "",
-          tipo: "radio" //RADIO, TEXT, EMAIL, CHECKBOX
+          tipo: "radio", //RADIO, TEXT, EMAIL, CHECKBOX
           opcoes: [ //Só quando radio ou checkbox
             "A - Primeira opção",
             "B - Segunda opção",
             "C - Terceira opção",
           ]
-        }
-      ]
-    }
-  ];
-
-        {
-          enunciado: "Primeira Pergunta",
-          resposta: "",
-          tipo: "email"
-          opcoes: [
-            "A - Primeira opção",
-            "B - Segunda opção",
-            "C - Terceira opção",
-          ]
-        },
-        {
-          enunciado: "Primeira Pergunta",
-          resposta: "",
-          tipo: "email"
-          opcoes: [
-            "A - Primeira opção",
-            "B - Segunda opção",
-            "C - Terceira opção",
-          ]
-        }
-      ]
-    },
-
-    {
-      eixo: "Eixo Transporte",
-      questoes: [
-        {
-          enunciado: "Primeira Pergunta",
-          resposta: "",
-          opcoes: [
-            "A - Primeira opção",
-            "B - Segunda opção",
-            "C - Terceira opção",
-            "D - Quarta opção",
-            "E - Quianta opção"
-          ]
         },
         {
           enunciado: "Segunda Pergunta",
           resposta: "",
-          opcoes: [
+          tipo: "radio", //RADIO, TEXT, EMAIL, CHECKBOX
+          opcoes: [ //Só quando radio ou checkbox
             "A - Primeira opção",
             "B - Segunda opção",
             "C - Terceira opção",
-            "D - Quarta opção",
-            "E - Quianta opção"
           ]
-        }
+        },
+        {
+          enunciado: "Terceira Pergunta",
+          resposta: "",
+          tipo: "radio", //RADIO, TEXT, EMAIL, CHECKBOX
+          opcoes: [ //Só quando radio ou checkbox
+            "A - Primeira opção",
+            "B - Segunda opção",
+            "C - Terceira opção",
+          ]
+        },
       ]
     }
   ];
