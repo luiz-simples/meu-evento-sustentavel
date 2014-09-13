@@ -3,24 +3,21 @@
     <h1>Meu evento sustentável</h1>
   </center>
 
-<style type="text/css">
-  .form label { display: block; }
-</style>
-
-    <form class="form">
-      <div class="form-group" ng-repeat="eixo in eixos">
-        <h2>{{eixo.eixo}}</h2>
-        <fieldset ng-repeat="(key, questao) in eixo.questoes">
-          <legend style="color: blue;">{{questao.enunciado}}</legend>
-          <label ng-repeat="opcao in questao.opcoes">
-            <input type="{{questao.tipo}}" name="{{key}}" ng-model="color" ng-value="opcao" ng-model="questao.resposta">
-            {{opcao}}
-          </label>
-          <br/>
-        </fieldset>
+  <form class="form">
+    <div class="form-group" ng-repeat="eixo in eixos">
+      <h2>{{eixo.eixo}}</h2>
+      <fieldset ng-repeat="(key, questao) in eixo.questoes">
+        <legend style="color: blue;">{{questao.enunciado}}</legend>
+        <label ng-repeat="opcao in questao.opcoes">
+          <input type="{{questao.tipo}}" name="{{key}}" ng-model="color" ng-value="opcao" ng-model="questao.resposta">
+          {{opcao}}
+        </label>
         <br/>
-      </div>
-    </form>
+      </fieldset>
+      <br/>
+    </div>
+  </form>
+
   <hr>
 
   <div class="footer">
